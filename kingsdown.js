@@ -553,7 +553,7 @@ NS.gnbSet();
             countNum = countNum + 1;
             percentage = Math.floor(countNum / totalNum * 100);
             //			console.log(percentage+"%")
-            console.log($(this).data("loaded"))
+            console.log($(this).data("loaded"));
             imageLoader();
             $(".loading_line").animate({
                 height: percentage + "%"
@@ -613,7 +613,7 @@ NS.gnbSet();
             arrowlUpDown();
         });
 
-    };
+    }
 
     function arrowlUpDown() {
         $(".scroll_arrow_up").animate({
@@ -635,7 +635,7 @@ NS.gnbSet();
         }, 500).animate({
             bottom: 15
         }, 500);
-    };
+    }
 
 
 
@@ -686,9 +686,9 @@ NS.gnbSet();
             if (evt.type === 'touchstart' && evt.originalEvent.touches.length === 1 || evt.type == "dragstart") {
                 touch_start_x = evt.pageX || evt.originalEvent.touches[0].pageX;
                 touch_start_y = evt.pageY || evt.originalEvent.touches[0].pageY;
-                console.log("start")
+                console.log("start");
             }
-        };
+        }
 
         function handleTouchMove(evt) {
             var drag_dist = 0;
@@ -752,7 +752,7 @@ NS.gnbSet();
         function galleryPrev() {
             if (imgNum > 0) {
                 imgNum = imgNum - 1;
-            } else if (imgNum == 0) {
+            } else if (imgNum === 0) {
                 imgNum = galleryCon.length - 1;
             }
             if (scrollFlag) {
