@@ -146,7 +146,7 @@ NS.gnbSet();
 
     $.fn.scrollSet = function() {
         var slideBox = $(this); // $(".slide_wrap")
-        var conPaging = $(".con_paging").children("li"); //페이저
+        var conPaging = $(".con_paging").children("li"); //페이저 pager
 
         if (setFlag) {
 
@@ -200,7 +200,7 @@ NS.gnbSet();
                 display: ""
             });
 
-						//
+            //
             // if ($("div").hasClass("kingdw_story")) {
             //     for (var i = 0, len = slideBox.length; i < len; i++) {
             //         if (idx >= i) {
@@ -248,14 +248,14 @@ NS.gnbSet();
             //         }
             //     }
             // }
-						//
+            //
             // $(slideBox).find(".left_slide").css({
             //     top: ""
             // });
             // $(slideBox).find(".right_slide").css({
             //     top: ""
             // });
-						//
+            //
             // if ($("div").hasClass("kingdw_story")) {
             //     $(slideBox).find(".left_slide").css({
             //         display: "block"
@@ -389,7 +389,7 @@ NS.gnbSet();
         //         }
         //     }
         // }
-				//
+        //
         // $.subContentHeightSet = function() {
         //     for (var k = 0, len = slideBox.length; k < len; k++) {
         //         var posH = $(slideBox[k]).find(".sub_contents_wrap").innerHeight();
@@ -410,7 +410,7 @@ NS.gnbSet();
 
     };
 
-	/* scrollSet */
+    /* scrollSet */
 
     function mouseWheelControl() {
         var isScrolling = false;
